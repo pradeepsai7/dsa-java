@@ -1,3 +1,8 @@
+// LeetCode:- Contains Duplicate
+// Pattern:- Arrays & Hashing
+// Time Complexity:- O(n)
+// Space Complexity:- O(n)
+
 class Solution {
     public boolean containsDuplicate(int[] a) {
         HashSet<Integer> st = new HashSet<>();
