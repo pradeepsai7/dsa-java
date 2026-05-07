@@ -1,3 +1,9 @@
+// LeetCode:- Two Sum
+// Pattern:- Arrays & Hashing
+// Time Complexity:- O(n)
+// Space Complexity:- O(n)
+
+
 class Solution {
     public int[] twoSum(int[] a, int target) {
         int[] ans = {-1, -1};
