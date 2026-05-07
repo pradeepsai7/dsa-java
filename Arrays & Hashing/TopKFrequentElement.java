@@ -1,3 +1,8 @@
+// Topic:- Arrays
+// Leetcode:- Top K Frequent Elements
+// Time complexity:- O(n)
+// Space Complexity:- O(n)
+
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         List<Integer>[] lst = new List[nums.length + 1];
