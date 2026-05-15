@@ -1,0 +1,22 @@
+// Leetcode :-  Longest Repeating Character Replacement
+// Topic :- Sliding Window
+// Time Complexity :- O(n)
+// Space Complexity :- O(1)
+
+class Solution {
+    public int characterReplacement(String s, int k) {
+        int ans = 0, left = 0, maxFreq = 0;
+        int[] freq = new int[26];
+        for(int right = 0; right < s.length(); right++){
+            char ch = s.charAt(right);
+            freq[ch - 'A']++;
+            maxFreq = Math.max(maxFreq, freq[ch - 'A']);
+            while((right - left + 1 - maxFreq) > k){
+                freq[s.charAt(left) - 'A']--;
+                left++;
+            }
+            ans = Math.max(ans, right - left + 1);
+        } 
+        return ans;
+    }
+}
